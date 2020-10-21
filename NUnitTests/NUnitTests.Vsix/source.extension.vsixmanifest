@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="NUnitTests.33fe3f00-7e02-4d0e-9d3b-dc2957a2149d" Version="1.0" Language="en-US" Publisher="Zherdev Oleg"/>
+    <Identity Id="NUnitTests.33fe3f00-7e02-4d0e-9d3b-dc2957a2149d" Version="1.0.1" Language="en-US" Publisher="Zherdev Oleg"/>
     <DisplayName>NUnitTestsAnalyzer</DisplayName>
     <Description xml:space="preserve">Analyzer for NUnit tests projects</Description>
   </Metadata>
