@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTests", "NUnitTests\NUnitTests\NUnitTests.csproj", "{826FDB53-9C47-4B08-921B-F04F0E232A3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTests", "NUnitTests\NUnitTests\NUnitTests.csproj", "{826FDB53-9C47-4B08-921B-F04F0E232A3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTests.CodeFixes", "NUnitTests\NUnitTests.CodeFixes\NUnitTests.CodeFixes.csproj", "{E722C5BC-1B15-4E6F-A981-C176B3ACC73E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTests.CodeFixes", "NUnitTests\NUnitTests.CodeFixes\NUnitTests.CodeFixes.csproj", "{E722C5BC-1B15-4E6F-A981-C176B3ACC73E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTests.Package", "NUnitTests\NUnitTests.Package\NUnitTests.Package.csproj", "{B02B4F03-9AF7-4A77-A42F-A186F5DAF57E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTests.Package", "NUnitTests\NUnitTests.Package\NUnitTests.Package.csproj", "{B02B4F03-9AF7-4A77-A42F-A186F5DAF57E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTests.Test", "NUnitTests\NUnitTests.Test\NUnitTests.Test.csproj", "{0C81C164-C4D0-4B37-85AF-47ADEA80A4F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTests.Test", "NUnitTests\NUnitTests.Test\NUnitTests.Test.csproj", "{0C81C164-C4D0-4B37-85AF-47ADEA80A4F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTests.Vsix", "NUnitTests\NUnitTests.Vsix\NUnitTests.Vsix.csproj", "{C67557D3-C26E-453F-ACCC-B3F74A463FD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTests.Vsix", "NUnitTests\NUnitTests.Vsix\NUnitTests.Vsix.csproj", "{C67557D3-C26E-453F-ACCC-B3F74A463FD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC91416D-F9D1-46D4-B428-2387E0CF4F5F}"
+	ProjectSection(SolutionItems) = preProject
+		version-history.md = version-history.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
