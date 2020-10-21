@@ -35,13 +35,24 @@ namespace NUnitTests
         private static void AnalyzeNamedType(SymbolAnalysisContext context)
         {
             var symbol = (INamedTypeSymbol)context.Symbol;
-            var attributes = symbol.GetAttributes();
-            if (symbol.ContainingType != null
-                || !attributes.Any(a => a.AttributeClass.Name.EndsWith("TESTFIXTUREATTRIBUTE", StringComparison.OrdinalIgnoreCase))
-            )
-            {
+            if (symbol.ContainingType != null)
                 return;
+
+            var testAttrFound = false;
+            var curSymbol = symbol;
+            while (curSymbol != null)
+            {
+                var attributes = curSymbol.GetAttributes();
+                if (attributes.Any(a => a.AttributeClass.Name.EndsWith("TESTFIXTUREATTRIBUTE", StringComparison.OrdinalIgnoreCase)))
+                {
+                    testAttrFound = true;
+                    break;
+                }
+                curSymbol = curSymbol.BaseType;
             }
+
+            if (!testAttrFound)
+                return;
 
             foreach (var methodSymbol in symbol.GetMembers().Where(mem => mem.Kind == SymbolKind.Method).Cast<IMethodSymbol>())
             {
